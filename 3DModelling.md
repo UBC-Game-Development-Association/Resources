@@ -17,6 +17,7 @@ Maya is Autodesk's industry standard 3D Poly Modelling software. A student licen
 - [Maya Learning Channel Maya 101](https://www.youtube.com/playlist?list=PLD8E5717592CF5C26)
 - [Flipped Normals 1 Hour Maya Quickstart Guide](https://www.youtube.com/watch?v=kYQ98Q5UmNo)
 ### 3DS Max
+Maya is Autodesk's other industry standard 3D Poly Modelling software. A student license can be acquired for free, for learning and non-commercial use by sending Autodesk evidence of enrollment. 
 - [3DS Max Learn to 3D Model Anything](https://www.youtube.com/watch?v=q2QGaKCyCBM)
 - [3DS Max Beginner Tutorial 2024](https://www.youtube.com/watch?v=gVTkLG5EaLE)
 ## Sculpting
