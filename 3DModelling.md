@@ -24,11 +24,11 @@ Maya is Autodesk's other industry standard 3D Poly Modelling software. A student
 Sculpting is a technique that is often used with poly modeling to add detail. Using extremely dense meshes, high levels of detail are painted onto models. This can be a very effective way to create detailed models, but often the dense models are not viable for use in games. This requires **retopology**, the creation of a low polygon approximation of the high poly model, and **baking**, creation of a detail map to transfer the detail from the high poly model to the low poly model.
 ### Blender Sculpting
   Blender supports sculpting competently for a generalist, free 3D software. It misses some optimizations available to dedicated sculpting packages. Many tutorials produced in Blender 2.8 will reference tools that may have moved in the UI, but can often be located by name through search, the default hotkey to search by name is F3.
--[Grant Abbitt Learn Sculpting in Blender Series](https://www.youtube.com/playlist?list=PLn3ukorJv4vvJM7tvjet4PP-LVjJx13oB)
--[Flipped Normals Sculpting Quickstart](https://www.youtube.com/watch?v=Cmi0KoFtc-4)
--[Yan Sculpts Sculpting in Blender Series](https://www.youtube.com/playlist?list=PLvPwLecDlWRCXSVh0nskG810BAerdz9DW)
--[Ryan King Art Retopology Introduction](https://www.youtube.com/watch?v=1myOZaxtHes)
--[Grant Abbitt Baking](https://www.youtube.com/watch?v=MUTdHgif65g)
+- [Grant Abbitt Learn Sculpting in Blender Series](https://www.youtube.com/playlist?list=PLn3ukorJv4vvJM7tvjet4PP-LVjJx13oB)
+- [Flipped Normals Sculpting Quickstart](https://www.youtube.com/watch?v=Cmi0KoFtc-4)
+- [Yan Sculpts Sculpting in Blender Series](https://www.youtube.com/playlist?list=PLvPwLecDlWRCXSVh0nskG810BAerdz9DW)
+- [Ryan King Art Retopology Introduction](https://www.youtube.com/watch?v=1myOZaxtHes)
+- [Grant Abbitt Baking](https://www.youtube.com/watch?v=MUTdHgif65g)
 ### ZBrush
 ### Mudbox 
 ## Texturing
