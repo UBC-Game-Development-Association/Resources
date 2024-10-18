@@ -30,6 +30,11 @@ Sculpting is a technique that is often used with poly modeling to add detail. Us
 - [Ryan King Art Retopology Introduction](https://www.youtube.com/watch?v=1myOZaxtHes)
 - [Grant Abbitt Baking](https://www.youtube.com/watch?v=MUTdHgif65g)
 ### ZBrush
+* ZBrush is an industry standard sculpting software that is extremely well optimized for sculpting. It is incredibly unintuitive and has a steep learning curve, but is very powerful. It is quite expensive. Maxon offers a reduced annual subscription for students.
+- [Pixologic Tutorials](https://zclassroom.com/zclassroom/workshop/getting-started-with-maxon-zbrush)
+- [Al Howell Learn ZBrush in 2024 Series](https://www.youtube.com/playlist?list=PLPczLadouqi-wLOizlZHAOLbfEas5Xc0L)
+- [Pixologic Youtube Channel](https://www.youtube.com/@MaxonZBrush)
+    - The company that produces ZBrush, Pixologic, has a near constant stream of professional artists using ZBrush on their youtube channel.
 ### Mudbox 
 ## Texturing
 ### Substance Painter
