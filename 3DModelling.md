@@ -35,7 +35,6 @@ Sculpting is a technique that is often used with poly modeling to add detail. Us
 - [Al Howell Learn ZBrush in 2024 Series](https://www.youtube.com/playlist?list=PLPczLadouqi-wLOizlZHAOLbfEas5Xc0L)
 - [Pixologic Youtube Channel](https://www.youtube.com/@MaxonZBrush)
     - The company that produces ZBrush, Pixologic, has a near constant stream of professional artists using ZBrush on their youtube channel.
-### Mudbox 
 ## Texturing
 ### Substance Painter
 ### 3DCoat
