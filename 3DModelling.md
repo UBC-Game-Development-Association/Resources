@@ -4,6 +4,8 @@
 A common workflow in game development might look something like Modeling -> UV Mapping -> Texturing -> Baking -> Rigging -> Animation -> Export, but many steps like baking and rigging may not be necessary depending on the model's purpose.
 It is important to note that many programs disagree on how to handle 3D space or express textures.
 
+*This documents is currently trying to provide an introduction to each discipline and software referenced.*
+
 ## Poly Modeling
 ### Blender 
 Blender is a free and open source 3D Modelling suite with a large online community. Tutorials from before Blender 2.8 will be very hard to follow, 2.8 and onward will generally be quite similar.
