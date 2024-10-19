@@ -4,7 +4,7 @@
 A common workflow in game development might look something like Modeling -> UV Mapping -> Texturing -> Baking -> Rigging -> Animation -> Export, but many steps like baking and rigging may not be necessary depending on the model's purpose.
 It is important to note that many programs disagree on how to handle 3D space or express textures.
 
-*This documents is currently trying to provide an introduction to each discipline and software referenced.*
+*This document is currently trying to provide an introduction to each discipline and software referenced.*
 
 ## Poly Modeling
 ### Blender 
@@ -50,7 +50,11 @@ Substance Painter is a professional grade 3D texturing software, which reflects 
 - [Michael Tanzillo Adobe Substance Painter Training](https://www.youtube.com/playlist?list=PLfAG6wq8HC-9CP7VoTHwGvGWJtcScHLYP)
 - [JL Mussi Learn Substance Painter in 80 Minutes](https://www.youtube.com/watch?v=s2MOx1Iteik)
 ### 3DCoat
+3DCoat, produced by Pilgway, is another suite with baking, texturing and sculpting abilities. It has educational licenses and perpetual licenses. The texturing is another layer based 3D Paint tool like Substance Painter.
+- [Pilgway tutorials](https://3dcoat.com/tutorials/)
+- [Nexttut 3DCoat Handpainted Textures Tutorial](https://www.youtube.com/watch?v=ld4qBMBL0fg&t=365s)
 ## Common Pitfalls
-### Left and right handed
-### Baking green channel 
-### Y up Z Up
+### Differences between softwares
+- Different 3D softwares will define certain aspects of 3D space differently. Partly due to rendering backends, as well as due to debates about how to project three dimensions into the two dimensional space of the screen, there are two key dimensional differences. ***Left-handed vs Right-handed*** and ***Y-Up vs Z-Up*** are the primary ways of sorting 3D programs. Left and right handedness describes the direction of the axis of depth, the one that goes into or out of the screen, often X by default. In a left handed coordinate system, that axis increases in the positive direction as it goes away from the viewer and into the screen, while a right handed system will increase positively going toward the viewer, coming out of the screen. Similarly, systems do not agree as to whether the Y or Z axis should be the one that points up on the screen by default. Y up might be imagined as drawing an X-Y plane on a piece of paper laying flat, then rotating it so that it now stands and faces you as if pressed against your monitor, and the missing axis, that of depth would then be Z. Z Up might be imagined as taking that flat paper with X-Y plane, and adding the third dimension, height, and naming that as your Z axis. There are arguments for each system, but if you export a 3D model from one software to another, and it is unexpectedly rotated, these differences in coordinate system are likely culprits, and can often be solved in export settings.
+![image](https://github.com/user-attachments/assets/bde6a227-5641-469c-a071-3bbf9b9f90c7)
+- If baking a normal map, there are many different formats that can be used in calculation. Most commonly three channels of an image, Red, Green, and Blue, are used to encode information about the X, Y, and Z axes accordingly. If a baked map from one program does not look correct in another, a common culprit is that the other program is using an ***inverted green channel***. Using a filter in a photo editing software is a quick fix. Maya is the most common software that uses an inverted green channel in bakes.
