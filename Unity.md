@@ -1,12 +1,16 @@
 # Unity
 
-Supports 2D/3D games for most common platforms; note that other build platforms (e.g. web, native iOS) may require additional components.
-Programming is done in C#, but I believe there is optional visual scripting.
+![Unity Editor Screenshot: Editor Version 2022.3.32f1](Unity/EditorVer2022_3_32f1.png)
 
-<!-- Asset files are by default saved to text, making Git merge conflicts easier to resolve.
-    
-    Actually the only engine that doesn't do that is Unreal - maybe I can omit this?
--->
+Supports 2D/3D games for most common platforms; note that other build platforms (e.g. web, native iOS) may require additional components.
+Programming is done in C#, but there is an optional visual scripting package.
+
+Free with Unity Student or Personal (see: https://unity.com/products) if your game makes less than \$200k USD (as of writing - October 2024).
+
+## Tips
+
+- GitHub provides a gitignore file for Unity projects: https://github.com/github/gitignore/blob/main/Unity.gitignore (one may also want to add `.idea` to the file if using Rider)
+- If multiple people are working on a scene at the same time, it would be potentially helpful to use prefabs so if there's a Git merge conflict, it is easier to resolve (either by reducing the number of objects to resolve, or simply allowing a person to re-add changes if it gets accidentally deleted)
 
 ## Glossary
 Sometimes, it can be hard to keep track of what each thing means, so just to make things easier in the beginning, here are some common words that will be popping up.
@@ -26,5 +30,3 @@ Sometimes, it can be hard to keep track of what each thing means, so just to mak
 **Editor**: Typically refers to the Unity Editor - what you use to modify the game. May also refer to Custom Editors for objects (e.g. custom inspectors).
 
 **ScriptableObject**: A data container to contain shared data in the project, typically saved to an asset in the project.
-
-<!-- Might include UnityEvent/MonoBehaviour/Sprite/Mesh, but that could be too specific?-->
