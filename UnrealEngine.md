@@ -3,7 +3,7 @@
 ![Screenshot of Unreal Engine, version 5.3.2](Unreal/UnrealScreenshot.png)
 
 Supports 2D and 3D games for most platforms.
-Programming is done via Blueprint, a visual scripting language, but projects can use C++ if configured to do so.
+Programming can be done via Blueprint (visual scripting) or C++ if the project supports it.
 Using C++ requires installing a compiler - typically Visual Studio for Windows, XCode for macOS.
 
 ## Tips
