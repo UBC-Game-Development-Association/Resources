@@ -62,3 +62,7 @@ In this case, you would have to do something different:
    1. This can be to your main or master branch - it's not modifying their repository, which is the one they're trying to protect.
 3. Create a pull request on the repository against main/master using your branch
 4. Wait for the pull request to be merged - there may be a review process
+
+## Further Reading
+
+STAT 406 had slides on how to use Git (with the RStudio GUI): https://ubc-stat.github.io/stat-406/schedule/slides/00-version-control.html#/overview
