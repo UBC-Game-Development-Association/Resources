@@ -12,6 +12,13 @@ Free with Unity Student or Personal (see: https://unity.com/products) if your ga
 - GitHub provides a gitignore file for Unity projects: https://github.com/github/gitignore/blob/main/Unity.gitignore (one may also want to add `.idea` to the file if using Rider)
 - If multiple people are working on a scene at the same time, it would be potentially helpful to use prefabs so if there's a Git merge conflict, it is easier to resolve (either by reducing the number of objects to resolve, or simply allowing a person to re-add changes if it gets accidentally deleted)
 
+## How do I...?
+
+See the tutorials:
+- [Basic Tutorials](./Unity/TutorialsBasic.md)
+- [Intermediate Tutorials](./Unity/TutorialsIntermediate.md)
+- [Advanced Tutorials](./Unity/TutorialsAdvanced.md)
+
 ## Glossary
 Sometimes, it can be hard to keep track of what each thing means, so just to make things easier in the beginning, here are some common words that will be popping up.
 
