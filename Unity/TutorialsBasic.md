@@ -232,7 +232,8 @@ public class YourBehaviourToBeLocated : MonoBehaviour
 Then, any time you want to locate the object, you can simply do `YourBehaviourToBeLocated.Instance`.
 
 > [!Warning]
-> This isn't the best implementation of this pattern.
+> This isn't the best implementation of this pattern (in fact, it has almost zero guardrails to ensure things don't
+> break).
 > Unlike the actual [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) this is based off of, this very
 > simple implementation does NOT have any checks to make sure you don't instantiate multiple of this object.
 > You could add a check to make sure one doesn't instantiate (or if one is detected, self-destruct), but this is alright
