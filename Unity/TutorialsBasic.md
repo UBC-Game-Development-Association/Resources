@@ -293,17 +293,28 @@ public class YourBehaviour : MonoBehaviour
 
 ## How do I read player input?
 
-WIP
+Unity has 2 input systems, the old input system (the UnityEngine.Input API) or the new input system.
 
 ### Old Input System
 
-WIP
+You can access the configured input axes/buttons in Edit > Project Settings > Input Manager.
 
-Use `Input.GetButton("button name")` or `Input.GetAxis("axis name")`.
+![Input Manager](./OldInputSystem.png).
+
+To read an axis, use `Input.GetAxis("axis name")`, such as `Input.GetAxis("Horizontal")`,
+which by default can read A/D button presses (or a controller joystick if present, or left/right arrow).
+Similarly, `Input.GetAxis("Vertical")` would do the same thing for the W/S keys.
+
+Some "Axes" aren't really axes but are effectively on/off buttons (such as Jump by default),
+which can be read by `Input.GetButton("axis name")` to test if buttons are held down,
+`Input.GetButtonDown("axis name")` to test if the button was first pressed this frame, or
+`Input.GetButtonUp("axis name")` to test if the button was released this frame.
+
+Alternatively, one can directly read keyboard/mouse inputs by using `Input.GetKey[/Down/Up]` or `Input.GetMouseButton[/Down/Up]`.
 
 ### New Input System
 
-WIP <!-- bro i've actually never used this lmao -->
+WIP <!-- dunno i don't like using it so thus i don't know too much about this LMAO -->
 
 ## Common issues/pitfalls
 
