@@ -180,11 +180,12 @@ public class YourBehaviour : MonoBehaviour
 ```
 
 3. Locating objects by name: use `GameObject.Find("name");`
-    1. This isn't very performant, so try to avoid doing this every frame. Try saving the result in Awake or Start.
+    1. This isn't very performant, so try to avoid doing this every frame. One way to do this is to save the result in
+       Awake or Start.
 4. Locating objects by tag: use `GameObject.FindObject[s]WithTag("tag")`
     1. Also not very performant - see above.
 5. Locating an instance of a behaviour: use `FindObject[s]OfType<Type>()`
-    1. Also not very performant
+    1. Also not very performant.
 6. Locating a specific object you want to define via the editor: add the following to your script, and you can now drag
    and drop objects into the field in the inspector.
 
@@ -238,3 +239,41 @@ Then, any time you want to locate the object, you can simply do `YourBehaviourTo
 > simple implementation does NOT have any checks to make sure you don't instantiate multiple of this object.
 > You could add a check to make sure one doesn't instantiate (or if one is detected, self-destruct), but this is alright
 > if you have this object in the scene and know you don't instantiate anything.
+
+## How do I run code every X seconds or with a delay?
+
+You'd probably want to use [coroutines](https://docs.unity3d.com/6000.0/Documentation/Manual/coroutines.html).
+
+> [!TIP]
+> For object destruction, `Object.Destroy` can take in a time parameter to avoid defining a coroutine like below:
+> `Object.Destroy(object, time)`.
+
+```csharp
+public class YourBehaviour : MonoBehaviour
+{
+    private IEnumerator _coroutine;
+    
+    private void Awake() {
+        // you might want to save it in case you want to stop it later with StopCoroutine(_coroutine)
+        _coroutine = YourCoroutine();
+        StartCoroutine(_coroutine);
+    }
+    
+    private IEnumerator YourCoroutine() {
+        // if you instead want a delay and not run every X seconds, remove the while loop
+        while (true) {
+            yield return new WaitForSeconds(1);
+            // code to execute here
+            Debug.Log("Waited 1 second!");
+        }
+    }
+}
+```
+
+> [!TIP]
+> Doing `yield return null` would wait for the next frame, if you don't want to specify a duration.
+
+> [!Warning]
+> If you set `Time.timeScale` to zero (e.g. if you freeze time when opening a UI),
+> yielding on `WaitForSeconds(1)` will never return until `Time.timeScale` is positive.
+> Use `WaitForSecondsRealtime` if you need it to occur in real time and not scaled time.
