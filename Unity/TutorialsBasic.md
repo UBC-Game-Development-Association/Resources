@@ -84,3 +84,58 @@ public class YourBehaviour : MonoBehaviour
 ```
 
 There's a few other methods as well, see Unity's documentation for more: ([Script reference](https://docs.unity3d.com/ScriptReference/Rigidbody.html), [Manual](https://docs.unity3d.com/Manual/RigidbodiesOverview.html)).
+
+## How do I create a UI?
+
+Unity supports multiple ways to make UIs:
+- Unity UI (uGUI) - the older system, where the UIs are GameObjects
+- UI Toolkit - something more similar to web development, where the UIs are created with XML/CSS (which they call UXML/USS)
+- IMGUI - I don't know what this is - this apparently is almost entirely defined by code??
+
+See more information here: https://docs.unity3d.com/Manual/UIToolkits.html
+
+### Unity UI (uGUI)
+
+Below is a very simple UI I made in 5-10 minutes, most of which was spent locating the 3D cat model I had lying around.
+
+![A very bad UI in uGUI](./FunnyUI.png)
+
+Unity UI (uGUI) uses the normal GameObject and MonoBehaviour system.
+The process is as follows:
+
+1. Add a Canvas to the scene
+    1. There's some performance reasons as to splitting multiple different displayed UIs into multiple Canvases (even if they're children of each other), but it also makes it easier to maintain
+2. Add various UI elements to it
+    1. The one above uses [Text Mesh Pro](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/TextMeshPro/index.html) text elements, images, buttons and text areas
+    2. Position those elements by adjusting the positions, anchors and pivots
+        1. There's a square icon that when clicked, lists a menu of common alignments for UI elements (e.g. stretching to fill space, or alignment to the top left corner)
+
+> [!TIP]
+> The default Canvas Scalar behaviour on the canvas defaults to 'Constant Pixel Size', which does not adjust for screen sizes.
+> 
+> I typically set mine to 'Scale with Screen Size' and set a desired reference resolution (e.g. 1920x1080) to scale correctly.
+
+> [!Warning]
+> Modifying the scale of UI elements may result in weird behaviours, such as the 'hitboxes' of buttons being incorrect, as the UI position system is somewhat different from the scale system.
+> Try to avoid modifying the scale when possible, although the root canvas generally has the scale modified to adjust for different screen sizes.
+
+
+
+### UI Toolkit
+
+![Image of a UI Toolkit UI](./UIToolkitEditor.png)
+
+This UI system is more like HTML (as the UIs are built with their own XML toolkit, or uXML) rather than GameObjects.
+The general process is as follows:
+
+1. Add a UI Document to the scene
+2. Create a Visual Tree Asset written in UXML or using the built-in UI builder
+3. Add the visual tree asset to the UI Document
+
+This may be easier for people more familiar with web development, as the saved assets use XML (or UXML), which resemble that of HTML assets:
+
+![Image of UXML](UIToolkitUXML.png)
+
+### IMGUI
+
+WIP <!-- i'm not too familiar with this -->
