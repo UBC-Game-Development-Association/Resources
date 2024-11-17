@@ -1,5 +1,9 @@
 ﻿# Unity: The Basics
 
+I would highly recommend checking out the [Unity manual](https://docs.unity3d.com/Manual/index.html) and [Scripting reference](https://docs.unity3d.com/ScriptReference/index.html).
+
+This guide is a work in progress, but aims to cover fairly common tasks.
+
 ## How do I get an object to move via script?
 
 There's two ways to do it.
@@ -28,6 +32,15 @@ However, keep in mind doing modifications in local space would also use any loca
 example).
 
 ![Objects moving in local and global space](./LocalVsGlobal.gif)
+
+### (3D) Using Character Controllers
+
+If you have a player in 3D, consider using [Character Controllers](https://docs.unity3d.com/Manual/class-CharacterController.html),
+which can automatically handle going up slopes or staircases, and can be easily moved by calling `characterController.SimpleMove`.
+
+> [!NOTE]  
+> Character Controllers do not have rigidbodies, and thus cannot have other external forces applied to them
+> (save for calling `Move` or `SimpleMove`).
 
 ### Using Rigidbodies
 
@@ -277,3 +290,41 @@ public class YourBehaviour : MonoBehaviour
 > If you set `Time.timeScale` to zero (e.g. if you freeze time when opening a UI),
 > yielding on `WaitForSeconds(1)` will never return until `Time.timeScale` is positive.
 > Use `WaitForSecondsRealtime` if you need it to occur in real time and not scaled time.
+
+## How do I read player input?
+
+WIP
+
+### Old Input System
+
+WIP
+
+Use `Input.GetButton("button name")` or `Input.GetAxis("axis name")`.
+
+### New Input System
+
+WIP <!-- bro i've actually never used this lmao -->
+
+## Common issues/pitfalls
+
+### Why is my pixel art blurry?
+
+In the image filter settings, set the Filter mode to Point (no filter).
+
+![Image settings](./ImageImportSettings.png)
+
+### Why can't I click certain UI elements?
+
+If using Unity UI, check if you've modified the scale of UI elements (see section on [Unity UI](#unity-ui-ugui)).
+
+Also check if other elements are being rendered on top of them, as only the first one will be clicked.
+To prevent other elements from being interactable and blocking clicks, uncheck 'Raycast Target' on that element.
+
+### Why does the game (or some objects) randomly speed up or slow down at seemingly random times?
+
+Those objects' actions may not be properly scaled to `Time.deltaTime`.
+For instance, if you increased the x position of an object by 0.05 every frame (e.g. via Update),
+but did not scale its motion by `Time.deltaTime`, the object will move faster at higher frame rates.
+
+Try using Rigidbody physics which would consider time scaling automatically,
+or manually scale motion by multiplying by `Time.deltaTime` (or `Time.fixedDeltaTime` for physics update durations).
