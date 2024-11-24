@@ -11,10 +11,10 @@ Scripting in Godot is done in the Python-like proprietary language GDScript. C# 
 
 When working with GDScript, the [docs](https://docs.godotengine.org/en/stable/) are always the best way to learn about the language reference, and are accessible within the engine in any script editor.
 
-![alt text](Godot/GodotRef.png)
+![alt text](../Assets/Godot/GodotRef.png)
 
 In both 2D and 3D, Godot is organized as a tree of **nodes** that can have **scripts**, saved as .gd files, attached to them. Scenes are predefined node trees that can be loaded, saved as .tscn files. Nodes can be added to the tree inheriting a built in type, described in the docs, that is then extended with the attached script.
-![alt text](Godot/SceneTreeExample.png)
+![alt text](../Assets/Godot/SceneTreeExample.png)
 
 ### Beginner Project Tutorials
 The following are tutorials that try to accquaint you with the general Godot Engine through a slightly longer project format.

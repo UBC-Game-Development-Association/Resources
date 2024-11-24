@@ -1,6 +1,6 @@
 # Unity
 
-![Unity Editor Screenshot: Editor Version 2022.3.32f1](Unity/EditorVer2022_3_32f1.png)
+![Unity Editor Screenshot: Editor Version 2022.3.32f1](../Assets/Unity/EditorVer2022_3_32f1.png)
 
 Supports 2D/3D games for most common platforms; note that other build platforms (e.g. web, native iOS) may require additional components.
 Programming is done in C#, but there is an optional visual scripting package.
@@ -15,9 +15,9 @@ Free with Unity Student or Personal (see: https://unity.com/products) if your ga
 ## How do I...?
 
 See the tutorials:
-- [Basic Tutorials](./Unity/TutorialsBasic.md)
-- [Intermediate Tutorials](./Unity/TutorialsIntermediate.md)
-- [Advanced Tutorials](./Unity/TutorialsAdvanced.md)
+- [Basic Tutorials](../Assets/Unity/TutorialsBasic.md)
+- [Intermediate Tutorials](../Assets/Unity/TutorialsIntermediate.md)
+- [Advanced Tutorials](../Assets/Unity/TutorialsAdvanced.md)
 
 ## Glossary
 Sometimes, it can be hard to keep track of what each thing means, so just to make things easier in the beginning, here are some common words that will be popping up.
@@ -32,7 +32,7 @@ Sometimes, it can be hard to keep track of what each thing means, so just to mak
 
 **Inspector**: The panel in Unity that display's a GameObject or Component's data. Can be customized (i.e. a custom inspector).
 
-![Inspector screenshot](Unity/Inspector.png)
+![Inspector screenshot](../Assets/Unity/Inspector.png)
 
 **Editor**: Typically refers to the Unity Editor - what you use to modify the game. May also refer to Custom Editors for objects (e.g. custom inspectors).
 

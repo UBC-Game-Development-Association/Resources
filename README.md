@@ -3,17 +3,17 @@ A repository of resources for common tools and skills in game development compil
 
 ## Art
 - Quick Start
-- [3D Modelling](3DModelling.md)
+- [3D Modelling](Content/3DModelling.md)
 
 ## Game Engines
 - Quick Start
-- [Godot](Godot.md)
-- [Unreal Engine](UnrealEngine.md)
-- [Unity](Unity.md)
+- [Godot](Content/Godot.md)
+- [Unreal Engine](Content/UnrealEngine.md)
+- [Unity](Content/Unity.md)
 
 ## Collaboration
-- [Source Control](SourceControl.md)
-- [Project Management](ProjectManagement.md)
+- [Source Control](Content/SourceControl.md)
+- [Project Management](Content/ProjectManagement.md)
 
 ## Programming
 - Quick Start
