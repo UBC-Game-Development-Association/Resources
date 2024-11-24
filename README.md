@@ -12,7 +12,7 @@ A repository of resources for common tools and skills in game development compil
 - [Unity](Content/Unity.md)
 
 ## Collaboration
-- [Source Control](Content/SourceControl.md)
+- [Source Control](SourceControl.md)
 - [Project Management](Content/ProjectManagement.md)
 
 ## Programming

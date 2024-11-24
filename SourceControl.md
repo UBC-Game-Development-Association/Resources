@@ -1,11 +1,55 @@
 # Source Control
 
-![screenshot of Rider's built-in Git log for one of my projects](SourceControl/GitLog.png)
+![screenshot of Rider's built-in Git log for one of my projects](Assets/SourceControl/GitLog.png)
 
 Source control is the process of tracking changes to your game's assets, allowing easier collaboration and version management.
 There are many source control tools out there, but one of the most common ones is [Git](https://git-scm.com/downloads), used by everyone from students (CPSC 210 anyone?) to multi-billion dollar corporations.
 
 (This document mostly focuses on Git and GitHub, as it's the one I'm most familiar with, and is fairly common.)
+
+# Git
+
+## Quick Start
+> [!IMPORTANT]
+> This guide is for those with little to no experience using Git. For more detailed information, see the next section.
+
+Source control systems like Git **help teams collaborate** by tracking changes to files, saving snapshots called "commits," and storing them in a **repository** on GitHub. This allows teams to easily manage different file versions and combine changes from multiple contributors.
+### Set-up
+
+> [!Note]
+> This guide uses a repository called ubc-game-dev-team-5 as an example. Whenever you see it, assume it is your team's repository name.
+1. **Create a GitHub Account**: Go to [GitHub](https://github.com/) and sign up.
+   1. (_Optional_) Ask your team to add you to the repository by sharing your GitHub username or email.
+2. **Install GitHub Desktop**: Download it [here](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
+3. **Clone Your Repository:** 
+   - Open GitHub Desktop and click "**Clone repository from the internet.**"
+   - Select your repository (e.g., ubc-game-dev-team-5).
+4. **Explore the Github Desktop interface**
+   - ![github desktop interface](Assets/SourceControl/GitDesktop.png)
+   - **Key Features:**
+     - **Red Box:** Repository selection. Ensure this matches the repository you’re working on.
+     - **Green Box:** Branch selection. Switch branches to work on or view different versions without losing changes.
+     - **Blue Box:** Sync options. 
+       - Fetch Origin: Check for new changes from others.
+       -  Pull Origin: Download updates from GitHub.
+       -  Push Origin: Upload your commits to GitHub.
+     - **Purple Box:** Commit section. Save your changes locally with a short, clear summary (and optionally a detailed description). Commit often to avoid losing progress.
+5. **Workflow Summary:**
+   1. Double-check the Red and Green boxes to confirm the correct repository and branch.
+   2. Click Fetch Origin to check for updates. If there are changes, click Pull Origin to download them.
+   3. Make your changes.
+   4. Repeat Steps 1-2, then create a commit in the Purple Box, and click Push Origin to upload your changes.
+6. Done!
+> [!Note]
+> For further information on workflow and branches, go to the next section
+
+### Glossary
+- **Repository**: The location where all the files for our revision history are stored. Think of it as the hard drive of git.
+- **Branch**: A separate version of your repository that allows you to work on specific features, such as characters or UI, without interfering with others' work.
+- **Commit**: A saved snapshot of the files you are working with
+- **Merge**: Joining together two different branches into one allows the independent changes made on each side to be integrated back into a single thing.
+- **Push request**: A request to merge between branches; after the request is made, others can comment on it for things like requesting changes before the merge proceeds
+- **Pull/Push**: You pull to get updates from GitHub and push to update GitHub with your commits.
 
 ## Setting up Git
 If you haven't already, first download git from [their website](https://git-scm.com/downloads).
@@ -20,7 +64,7 @@ There's a few other tools that make Git easier to use, such as providing a Graph
 
 Depending on if you're creating your project or if you're working on an existing one, there may already be a Git repository.
 
-### There's an existing repository
+## There's an existing repository
 Some teams use [GitHub](https://github.com) to host their code (either publicly or privately), and if the project already has a repository on GitHub, you may not have to create a new one.
 
 Clone the repository to your machine by using Git:
@@ -30,7 +74,7 @@ Clone the repository to your machine by using Git:
 > [!IMPORTANT]
 > Do NOT use the "Download ZIP" button on GitHub. It would download the code, but Git requires a `.git` directory that gets initialized when `git clone` or most VCS tools clones the repo, and downloading the ZIP does not include that directory.    
 
-### There is no repository
+## There is no repository
 If there is no repository, you can [create one on GitHub](https://github.com/new).
 Once created, you can upload your assets to the repository.
 
@@ -66,3 +110,5 @@ In this case, you would have to do something different:
 ## Further Reading
 
 STAT 406 had slides on how to use Git (with the RStudio GUI): https://ubc-stat.github.io/stat-406/schedule/slides/00-version-control.html#/overview
+
+# Perforce
