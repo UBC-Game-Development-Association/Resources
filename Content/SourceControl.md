@@ -1,6 +1,6 @@
 # Source Control
 
-![screenshot of Rider's built-in Git log for one of my projects](Assets/SourceControl/GitLog.png)
+![screenshot of Rider's built-in Git log for one of my projects](../Assets/SourceControl/GitLog.png)
 
 Source control is the process of tracking changes to your game's assets, allowing easier collaboration and version management.
 There are many source control tools out there, but one of the most common ones is [Git](https://git-scm.com/downloads), used by everyone from students (CPSC 210 anyone?) to multi-billion dollar corporations.
@@ -25,7 +25,7 @@ Source control systems like Git **help teams collaborate** by tracking changes t
    - Open GitHub Desktop and click "**Clone repository from the internet.**"
    - Select your repository (e.g., ubc-game-dev-team-5).
 4. **Explore the Github Desktop interface**
-   - ![github desktop interface](Assets/SourceControl/GitDesktop.png)
+   - ![github desktop interface](../Assets/SourceControl/GitDesktop.png)
    - **Key Features:**
      - **Red Box:** Repository selection. Ensure this matches the repository you’re working on.
      - **Green Box:** Branch selection. Switch branches to work on or view different versions without losing changes.
