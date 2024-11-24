@@ -1,6 +1,6 @@
 # Unreal Engine
 
-![Screenshot of Unreal Engine, version 5.3.2](Unreal/UnrealScreenshot.png)
+![Screenshot of Unreal Engine, version 5.3.2](../Assets/Unreal/UnrealScreenshot.png)
 
 Supports 2D and 3D games for most platforms.
 Programming can be done via Blueprint (visual scripting) or C++ if the project supports it.

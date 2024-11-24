@@ -2,16 +2,21 @@
 A repository of resources for common tools and skills in game development compiled by the UBC Game Development Club!
 
 ## Art
-- [3D Modelling](3DModelling.md)
+- Quick Start
+- [3D Modelling](Content/3DModelling.md)
 
 ## Game Engines
-- [Godot](Godot.md)
-- [Unreal Engine](UnrealEngine.md)
-- [Unity](Unity.md)
+- Quick Start
+- [Godot](Content/Godot.md)
+- [Unreal Engine](Content/UnrealEngine.md)
+- [Unity](Content/Unity.md)
+
+## Collaboration
+- [Source Control](Content/SourceControl.md)
+- [Project Management](Content/ProjectManagement.md)
 
 ## Programming
-- [Source Control](SourceControl.md)
-- [Project Management](ProjectManagement.md)
+- Quick Start
 
 ## Writing
 
