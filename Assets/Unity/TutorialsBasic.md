@@ -324,6 +324,12 @@ In the image filter settings, set the Filter mode to Point (no filter).
 
 ![Image settings](./ImageImportSettings.png)
 
+### Why are there weird lines across my sprites along sprite boundaries?
+
+![Sprite tiling without a sprite atlas, with gaps](SpriteTileWithoutSpriteAtlas.png)
+
+Try adding your sprites to a [Sprite Atlas](https://docs.unity3d.com/6000.3/Documentation/Manual/sprite/atlas/sprite-atlas-reference.html).
+
 ### Why can't I click certain UI elements?
 
 If using Unity UI, check if you've modified the scale of UI elements (see section on [Unity UI](#unity-ui-ugui)).
